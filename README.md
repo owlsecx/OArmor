@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Craft and transmit ARP Request / Reply /
+OArmor is a standard-library ARP packet crafter and network prober for Layer-2 work on authorised networks. It builds and transmits ARP Request, Reply, Gratuitous and Probe frames, sweeps the local network and resolves vendors through an OUI lookup. Captured frames can be hex-decoded and dumped in colour, then exported to binary, hex or TXT for analysis.
 
 ---
 
 ## ✨ Features
 
-- ARP Packet Crafter & Network Prober (Layer 2)
+- Craft and transmit ARP Request / Reply / Gratuitous / Probe frames
+- Network ARP sweep with host discovery
+- OUI-based vendor lookup for discovered MAC addresses
+- Hex decoding of ARP frames with coloured dump output
+- Export captured data to binary, hex and TXT
+- No external dependencies — Python standard library only
 
 ---
 
@@ -39,6 +44,8 @@ Craft and transmit ARP Request / Reply /
 
 ```bash
 ./OArmor
+./OArmor --interfaces
+./OArmor --help
 ```
 
 ---
